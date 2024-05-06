@@ -68,3 +68,6 @@ A blog post write-up detailing how the keylogger can be embedded in a live XSS v
 [1]: http://dev.w3.org/html5/websockets
 [2]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval
 [3]: http://brew.sh
+
+
+cloudflared tunnel --url http://localhost:3000
